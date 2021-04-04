@@ -1,0 +1,85 @@
+$flaticon-font: "flaticon";
+
+@font-face {
+    font-family: $flaticon-font;
+    src: url("./flaticon.ttf?9227dc811fcc09c88b7d0242b55f9788") format("truetype"),
+url("./flaticon.woff?9227dc811fcc09c88b7d0242b55f9788") format("woff"),
+url("./flaticon.woff2?9227dc811fcc09c88b7d0242b55f9788") format("woff2"),
+url("./flaticon.eot?9227dc811fcc09c88b7d0242b55f9788#iefix") format("embedded-opentype"),
+url("./flaticon.svg?9227dc811fcc09c88b7d0242b55f9788#flaticon") format("svg");
+}
+
+i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
+    font-family: flaticon !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+$flaticon-map: (
+    "buddhist-yoga-pose": "\f101",
+    "exercise-1": "\f102",
+    "exercise": "\f103",
+    "jump-rope": "\f104",
+    "man-doing-yoga": "\f105",
+    "man-jumping-rope": "\f106",
+    "man-lifting-weight": "\f107",
+    "man-lifting-weights": "\f108",
+    "pull-up": "\f109",
+    "pulling-up-training-silhouette": "\f10a",
+    "weightlifting": "\f10b",
+    "yoga-1": "\f10c",
+    "yoga-2": "\f10d",
+    "yoga-3": "\f10e",
+    "yoga": "\f10f",
+);
+
+.flaticon-buddhist-yoga-pose:before {
+    content: map-get($flaticon-map, "buddhist-yoga-pose");
+}
+.flaticon-exercise-1:before {
+    content: map-get($flaticon-map, "exercise-1");
+}
+.flaticon-exercise:before {
+    content: map-get($flaticon-map, "exercise");
+}
+.flaticon-jump-rope:before {
+    content: map-get($flaticon-map, "jump-rope");
+}
+.flaticon-man-doing-yoga:before {
+    content: map-get($flaticon-map, "man-doing-yoga");
+}
+.flaticon-man-jumping-rope:before {
+    content: map-get($flaticon-map, "man-jumping-rope");
+}
+.flaticon-man-lifting-weight:before {
+    content: map-get($flaticon-map, "man-lifting-weight");
+}
+.flaticon-man-lifting-weights:before {
+    content: map-get($flaticon-map, "man-lifting-weights");
+}
+.flaticon-pull-up:before {
+    content: map-get($flaticon-map, "pull-up");
+}
+.flaticon-pulling-up-training-silhouette:before {
+    content: map-get($flaticon-map, "pulling-up-training-silhouette");
+}
+.flaticon-weightlifting:before {
+    content: map-get($flaticon-map, "weightlifting");
+}
+.flaticon-yoga-1:before {
+    content: map-get($flaticon-map, "yoga-1");
+}
+.flaticon-yoga-2:before {
+    content: map-get($flaticon-map, "yoga-2");
+}
+.flaticon-yoga-3:before {
+    content: map-get($flaticon-map, "yoga-3");
+}
+.flaticon-yoga:before {
+    content: map-get($flaticon-map, "yoga");
+}

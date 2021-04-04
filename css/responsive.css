@@ -1,0 +1,37 @@
+/*--===extra small device===---*/
+@media (max-width: 575px){
+    .navbar .navbar-brand {
+        position: static;
+        padding: 0;         
+        transform: skewX(0deg);
+    }
+    .navbar .navbar-brand img{
+        transform: skewX(0deg);
+    } 
+    .navbar-toggler{
+        border-color: #fff !important;
+        margin-right: 10px;
+    }
+    .navbar-toggler span{
+        color: #fff !important;
+    }
+    .navbar-nav{
+        background: var(--clr);
+        text-align: center;
+    }
+    .navbar .navbar-nav .nav-item .nav-link::before{
+        content: '';
+        width: 0;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        right: -100%;
+        background: #fff;
+        transition: all linear 0.4s;
+    }
+    #about .about-text{
+        padding-top: 20px;
+    }
+     
+}
+/*--===extra small device===---*/
