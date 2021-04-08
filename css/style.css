@@ -85,7 +85,7 @@ p{
     position: fixed;
     top: 0;
     left: 0;
-   background:  rgba(226, 62, 56, 0.6);
+   background:#353535d0;
    z-index: 99999;
    padding-bottom: 10px;
    height: 70px;
@@ -226,7 +226,21 @@ p{
     top: 20px;
     left: 0;
     background: var(--clr);
+    animation: h3a linear 0.7s;
+    animation-delay: .4s;
 }
+
+@keyframes h3a {
+    0% {
+        width: 0;
+        
+    }
+    
+    100% {
+       width: 175px;
+    }
+}
+
 #banner .bg1 .banner-text h3::before{
     content: '';
     width: 75px;
@@ -235,7 +249,21 @@ p{
     bottom: 15px;
     left: 0;
     background: var(--clr);
+    animation: h3b linear 0.7s;
+    animation-delay: .4s;
 }
+
+@keyframes h3b {
+    0% {
+        width: 0;
+        
+    }
+    
+    100% {
+       width: 75px;
+    }
+}
+
 #banner .bg1 .banner-text h1::after{
     content: '';
     width: 3px;
@@ -244,6 +272,20 @@ p{
     top: 20px;
     right: 0;
     background: var(--clr);
+    animation: h1a linear 0.7s;
+    animation-delay: .4s;
+}
+
+@keyframes h1a {
+    0% {
+        height: 0%;
+         
+     }
+     
+     100% {
+        height: 86%;
+     }
+
 }
 
 #banner .bg1 .banner-text h1::before{
@@ -254,7 +296,21 @@ p{
     top: 20px;
     left: 0;
     background: var(--clr);
+    animation: h1b linear 0.7s;
+    animation-delay: .4s;
 }
+
+@keyframes h1b {
+    0% {
+       height: 0%;
+        
+    }
+    
+    100% {
+       height: 86%;
+    }
+}
+
 #banner .bg1 .banner-text p::after{
     content: '';
     width: 118px;
@@ -263,7 +319,23 @@ p{
     top: 20px;
     right: 0;
     background: var(--clr);
+    animation: pa linear 0.7s;
+    animation-delay: .4s;
 }
+
+@keyframes pa {
+    0% {
+        width: 0;
+        
+    }
+    
+    100% {
+       width: 118px;
+    }
+}
+
+    
+
 #banner .bg1 .banner-text p::before{
     content: '';
     width: 48px;
@@ -272,7 +344,22 @@ p{
     bottom: 15px;
     right: 0;
     background: var(--clr);
+    animation: pb linear 0.7s;
+    animation-delay: .4s;
 }
+
+@keyframes pb {
+    0% {
+        width: 0;
+        
+    }
+    
+    100% {
+       width: 48px;
+    }
+}
+
+
 /*-----#banner .bg3 ------*/
 
 #banner .bg3 .banner-text h3::after{
@@ -451,6 +538,7 @@ p{
     line-height: 24px;
     color: #777;
     padding: 0 10px;
+    
 
 }
 #about .about-text p:first-of-type{
@@ -798,7 +886,7 @@ p{
 
 /*==== funfact start  ====*/
 #funfact{    
-    background: url(../images/count-banner.jpg);              
+    background: url(../images/count-banner.jpg) no-repeat center / cover;              
     position: relative;
     z-index: 1;
     padding-top: 45px;
@@ -881,7 +969,12 @@ p{
 #classes .class-item ul li.active{
     background: var(--clr);
     transition: all linear 0.4s;
+    -o-transition: all linear 0.4s;
+    -moz-transition: all linear 0.4s;
+    -ms-transition: all linear 0.4s;
+    -webkit-transition: all linear 0.4s; 
 }
+
 #classes .class-item ul li.active:hover{
     transform: scale(1.05);
 }
@@ -909,7 +1002,7 @@ p{
 
 
 /*===== brand start  =====*/
- #brand{
+ /* #brand{
     margin-top: 80px;
     margin-bottom: 80px;
     position: relative;
@@ -926,8 +1019,13 @@ p{
     color: #353535;
     font-size: 30px;
     transition: all linear 0.4s;
-
+    -o-transition: all linear 0.4s;
+    -moz-transition: all linear 0.4s;
+    -ms-transition: all linear 0.4s;
+    -webkit-transition: all linear 0.4s; 
 }
+
+
 #brand .slick-prev:hover{
     color: var(--clr);
 }
@@ -954,7 +1052,73 @@ p{
 #brand .slick-slider .slick-center img {
     box-shadow: 1px 2px 3px 1px;
     transform: scaleY(1.2);   
+} */
+
+
+#brand {
+    margin: 74px 0;
 }
+
+#brand .slick-slide {
+    margin-top: 5px;
+}
+#brand .slick-track{
+    padding: 15px 0;
+}
+
+
+#brand .bn-img {
+    padding: 0 10px;
+}
+
+#brand img {
+    width: 100%;
+}
+
+#brand .slick-center img {
+    box-shadow: 1px 2px 3px 1px;
+    
+    transform: scaleY(1.2);
+}
+
+#brand .prev-arrow {
+    position: absolute;
+    font-size: 28px;
+    top: 50%;
+    left: -30px;
+    transform: translateY(-50%);
+    cursor: pointer;
+    transition: all linear 0.4s;
+    -o-transition: all linear 0.4s;
+    -moz-transition: all linear 0.4s;
+    -ms-transition: all linear 0.4s;
+    -webkit-transition: all linear 0.4s;
+    z-index: 999;
+}
+
+#brand .next-arrow {
+    position: absolute;
+    font-size: 28px;
+    top: 50%;
+    right: -30px;
+    transform: translateY(-50%);
+    cursor: pointer;
+    transition: all linear 0.4s;
+    -o-transition: all linear 0.4s;
+    -moz-transition: all linear 0.4s;
+    -ms-transition: all linear 0.4s;
+    -webkit-transition: all linear 0.4s;
+    z-index: 999;
+}
+
+
+#brand .slick-prev:hover{
+    color: var(--clr);
+}
+#brand .slick-next:hover{
+    color: var(--clr);
+}
+
 /*===== brand end  =====*/
 
 
@@ -994,15 +1158,18 @@ p{
     top: 0;
     left: 0;
 }
-#footer .footer-content::after{
+#footer .footer-content{
+    border-bottom: 1px solid rgb(133, 33, 33);
+}
+/* #footer .footer-content::after{
     content: '';
     width: 100%;
     height: 1px;
     background: rgb(133, 33, 33);
     position: absolute;
-    bottom: 0;
+    bottom: -10px;
     left: 0;
-}
+} */
 #footer .timing{
     color: #fff;
    
@@ -1032,6 +1199,7 @@ p{
     display: inline-block;
     width: 108px;
     text-transform: capitalize;
+   
 }
 
 #footer .twitter ul li{
@@ -1061,7 +1229,12 @@ p{
 }
 #footer .g-photo img{
     transition: all linear 0.4s;
+    -o-transition: all linear 0.4s;
+    -moz-transition: all linear 0.4s;
+    -ms-transition: all linear 0.4s;
+    -webkit-transition: all linear 0.4s; 
 }
+
 #footer .g-photo img:hover{
     transform: scale(1.1);
 }
@@ -1099,12 +1272,18 @@ p{
     border: 1px solid #fff;
     color: #fff;
     transition: all linear 0.4s;
+    -o-transition: all linear 0.4s;
+    -moz-transition: all linear 0.4s;
+    -ms-transition: all linear 0.4s;
+    -webkit-transition: all linear 0.4s; 
+}
     
 
-}
+
 #footer .socail ul li a i:hover{
     background: var(--clr);
     border: 1px solid var(--clr);
+    transform: rotate(-360deg);
 }
 #footer h5{
     font-family: var(--hf);
@@ -1115,13 +1294,25 @@ p{
     margin-bottom: 15px;
     margin-top: 5px;
 }
+/* #footer .copywrite{
+    position: relative;
+}
+#footer .copywrite::after{
+    content: '';
+    width: 100%;
+    height: 1px;
+    background: rgb(18, 9, 148);
+    position: absolute;
+    top: 10px;
+    left: 0;  
+} */
 #footer .copywrite p{
     color: #fff;
     font-size: 13px;
     font-weight: 400;
     font-family: var(--pf);
     line-height: 52px;
-    margin-top: 10px;
+    margin-top: 20px;
    
 }
 #footer .copywrite p a{
@@ -1143,6 +1334,7 @@ p{
     z-index: 9999999999999;
     display: none;
     border-radius: 50%;
+    transition: all linear 0.4s;
 }
 
 .back-to-top:hover{    

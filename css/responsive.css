@@ -1,12 +1,363 @@
-/*--===extra small device===---*/
-@media (max-width: 575px){
+/*--=== large device start===---*/
+@media (max-width: 1199.98px) {
+#banner .bg1 .banner-text h3::after{
+    
+    width: 135px;    
+    animation: h3a linear 0.7s;
+    animation-delay: .4s;
+}
+
+@keyframes h3a {
+    0% {
+        width: 0;
+        
+    }
+    
+    100% {
+       width: 135px;
+    }
+}
+
+
+
+    #banner .bg1 .banner-text p::after{
+       
+        width: 100px;       
+        animation: pa linear 0.7s;
+        animation-delay: .4s;}
+    
+    @keyframes pa {
+        0% {
+            width: 0;
+            
+        }
+        
+        100% {
+           width: 100px;
+        }
+    }
+    
+    #banner .bg3 .banner-text h3::after{
+        
+        width: 140px;
+       
+    }
+
+    #banner .bg3 .banner-text p::after{
+        
+        width: 140px;
+       
+    }
+    #about .about-video{
+        margin-top: 75px;
+    }
+    #about .about-text p{
+        text-align: justify;
+    }
+    #funfact .funfact-item p {       
+        font-size: 12px;
+        
+    }
+    #classes .class-menu .nav-link {
+        
+        width: 147px;
+       
+    }
+    #classes .class-item ul li {
+        width: 18.5%;
+       
+    }
+    #footer .timing ul li span{
+        
+        width: 70px;
+        
+        
+    }
+}
+/*--=== large device end===---*/
+
+/*--=== medium device start===---*/
+@media (min-width: 768px) and (max-width: 991.98px){
+
     .navbar .navbar-brand {
         position: static;
         padding: 0;         
         transform: skewX(0deg);
+        margin-left: 25px;
+       background: none;
     }
     .navbar .navbar-brand img{
+        transform: skewX(0deg);    
+    } 
+
+    .navbar .navbar-nav .nav-item .nav-link::before{
+        content: '';
+        width: 0%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background:var(--clw);
+        z-index: -2;
+        transition: all linear 0.4s;
+        -o-transition: all linear 0.4s;
+        -moz-transition: all linear 0.4s;
+        -ms-transition: all linear 0.4s;
+        -webkit-transition: all linear 0.4s;
+    }
+
+    .navbar .navbar-nav .nav-item .nav-link:hover::before{
+        width: 100%;
+       
+    }
+
+    .navbar-toggler{
+        border-color: #fff !important;
+        margin-right: 10px;
+    }
+    .navbar-toggler span{
+        color: #fff !important;
+        transition: all linear 0.4s;
+    }
+    .navbar-toggler:hover span{
+        color: var(--clr) !important;
+    }
+    .navbar-nav{
+        background: transparent;
+        /* background: var(--clr); */
+        text-align: center;
+    }
+  
+    
+    #banner .bg3 .banner-text{
+        text-align: left !important;
+    }
+    #banner .bg1 .banner-text h1::before,
+    #banner .bg1 .banner-text h1::after,
+    #banner .bg1 .banner-text h3::after,
+    #banner .bg1 .banner-text h3::before,
+    #banner .bg1 .banner-text p::after,
+    #banner .bg1 .banner-text p::before{
+
+       display: none;
+    } 
+      
+    #banner .bg3 .banner-text h1::before,
+    #banner .bg3 .banner-text h1::after,
+    #banner .bg3 .banner-text h3::after,
+    #banner .bg3 .banner-text h3::before,
+    #banner .bg3 .banner-text p::after,
+    #banner .bg3 .banner-text p::before{
+
+       display: none;
+    } 
+      
+    
+    #about{
+        padding-top: 30px !important;
+        margin-bottom: 30px !important;
+    }
+    #about .about-video{
+        margin-top: 30px !important;
+    }
+    #about .about-video img{
+        width: 100%;
+    }
+    #plan .plan-l-head{
+        margin-bottom: 30px;
+       margin-left: 180px;
+    }
+    #funfact .funfact-item p {       
+        font-size: 14px;
+        
+    }
+    #classes .class-item ul li {
+        width: 32.5%;
+       
+    }
+    #classes .class-item ul li:last-child {
+        display: none;
+       
+    }
+    #classes .class-menu .nav-link {
+        
+        width: 227px;
+        
+    }
+    #brand {
+
+        padding: 40px 0px;
+    }
+
+    #footer .footer-logo {
+       text-align: center;
+    }
+    #footer .copywrite{
+        text-align: center;
+    }
+    #footer h5 {        
+        margin-bottom: 25px;
+        margin-top: 18px;
+    }
+}
+
+/*--=== medium device end===---*/
+
+
+/*--=== small device===---*/
+
+
+@media (max-width: 767.98px) {
+    .navbar .navbar-brand {
+        position: static;
+        padding: 0;         
         transform: skewX(0deg);
+        margin-left: 25px;
+       background: none;
+    }
+    .navbar .navbar-brand img{
+        transform: skewX(0deg);    
+    } 
+
+    .navbar .navbar-nav .nav-item .nav-link::before{
+        content: '';
+        width: 0%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background:var(--clw);
+        z-index: -2;
+        transition: all linear 0.4s;
+        -o-transition: all linear 0.4s;
+        -moz-transition: all linear 0.4s;
+        -ms-transition: all linear 0.4s;
+        -webkit-transition: all linear 0.4s;
+    }
+
+    .navbar .navbar-nav .nav-item .nav-link:hover::before{
+        width: 100%;
+       
+    }
+
+    .navbar-toggler{
+        border-color: #fff !important;
+        margin-right: 10px;
+    }
+    .navbar-toggler span{
+        color: #fff !important;
+        transition: all linear 0.4s;
+    }
+    .navbar-toggler:hover span{
+        color: var(--clr) !important;
+    }
+    .navbar-nav{
+       
+        background: var(--clr);
+        text-align: center;
+    }
+    #banner .banner-text h1{
+        
+        font-size: 40px;        
+       
+    }
+    #banner .banner-text h3{
+        
+        font-size: 25px;        
+       
+    }
+    
+    #banner .bg3 .banner-text{
+        text-align: left !important;
+    }
+    #banner .bg1 .banner-text h1::before,
+    #banner .bg1 .banner-text h1::after,
+    #banner .bg1 .banner-text h3::after,
+    #banner .bg1 .banner-text h3::before,
+    #banner .bg1 .banner-text p::after,
+    #banner .bg1 .banner-text p::before{
+
+       display: none;
+    } 
+      
+    #banner .bg3 .banner-text h1::before,
+    #banner .bg3 .banner-text h1::after,
+    #banner .bg3 .banner-text h3::after,
+    #banner .bg3 .banner-text h3::before,
+    #banner .bg3 .banner-text p::after,
+    #banner .bg3 .banner-text p::before{
+
+       display: none;
+    } 
+    #banner .banner-item{
+        padding-top: 200px;
+        padding-bottom: 90px;       
+        
+    }
+    #about{
+        padding-top: 30px !important;
+        margin-bottom: 30px !important;
+    }
+    #about .about-video{
+        margin-top: 30px !important;
+    } 
+    #funfact .funfact-item h4 {
+        
+        font-size: 32px;
+    }
+    #funfact .funfact-item p {
+        
+        font-size: 10px;        
+    }
+    #classes .class-menu .nav-link {
+       
+        width: 167px;
+        
+    }
+    #classes .class-item ul li {
+        width: 48.5%;
+        
+    }
+    
+    #footer .footer-content::after{
+       
+        bottom: -30px;
+        
+    }
+    #footer .footer-logo {
+        text-align: center;
+     }
+     #footer .timing ul li span{
+        
+        width: 100px;
+        
+    }
+    .socail{
+        margin-bottom: 50px;
+    }
+    #footer .copywrite{
+        text-align: center;
+       
+       
+    }
+    
+    
+    
+}
+/*--=== small device===---*/
+
+/*--===extra small device===---*/
+@media (max-width: 575.98px){
+    .navbar .navbar-brand {
+        position: static;                
+        transform: skewX(-30deg);
+        margin-left: 25px;
+        padding: 0 !important;
+        background: none;
+        /* background: #31313196; */
+    }
+    .navbar .navbar-brand img{
+        transform: skewX(30deg);
     } 
     .navbar-toggler{
         border-color: #fff !important;
@@ -14,24 +365,73 @@
     }
     .navbar-toggler span{
         color: #fff !important;
+        transition: all linear 0.4s;
+    }
+    .navbar-toggler:hover span{
+        color: var(--clr) !important;
     }
     .navbar-nav{
         background: var(--clr);
         text-align: center;
     }
-    .navbar .navbar-nav .nav-item .nav-link::before{
-        content: '';
-        width: 0;
-        height: 100%;
-        position: absolute;
-        top: 0;
-        right: -100%;
-        background: #fff;
-        transition: all linear 0.4s;
+    
+    #banner .bg1 .banner-text h1::before,
+    #banner .bg1 .banner-text h1::after,
+    #banner .bg1 .banner-text h3::after,
+    #banner .bg1 .banner-text h3::before,
+    #banner .bg1 .banner-text p::after,
+    #banner .bg1 .banner-text p::before{
+
+       display: none;
+    } 
+          
+    #banner .banner-item{
+        padding-top: 200px;
+        padding-bottom: 90px;       
+        
     }
-    #about .about-text{
-        padding-top: 20px;
+    #banner .banner-text h1{
+        
+        font-size: 40px;        
+        margin-top: 20px;
+        margin-bottom: 20px;
     }
-     
+    #banner .banner-text h3{
+        
+        font-size: 25px;        
+       
+    }
+    #about{
+        padding-top: 30px !important;
+        margin-bottom: 30px !important;
+    }
+    #about .about-video{
+        margin-top: 30px !important;
+    }
+    
+    #classes .class-menu .nav-link {
+       
+        width: 272px;
+        
+    }
+    #classes .class-item ul li {
+        width: 49%;
+       
+    }
+    #footer .contact-details ul li {
+       
+        margin-top: -10px !important;
+    }
+    .socail{
+        margin-bottom: 50px;
+    }
+    #footer .copywrite{
+        text-align: center;
+       
+    }
+    #footer .footer-logo {
+        text-align: center;
+     }
+
 }
 /*--===extra small device===---*/

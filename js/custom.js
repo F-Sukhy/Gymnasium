@@ -36,6 +36,38 @@
    slidesToShow: 2,      
    autoplay: true,   
    dots: true,
+    responsive: [
+        {
+          breakpoint: 992,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 1,
+            infinite: true,
+            dots: true
+          }
+        },
+        {
+            breakpoint: 768,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1,
+              
+              dots: true
+            }
+          },
+          {
+            breakpoint: 576,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1,
+              infinite: true,
+              dots: true
+            }
+          },
+      
+   ]
+
+
     });
 
 
@@ -48,23 +80,76 @@
 
 //brand-slider
     
-    $(".brand-slider").slick({
+  //   $(".brand-slider").slick({
 
-    arrows: true,
-    slidesToShow: 5,
-    slidesToScroll: 1,
-    dots: false,
-    centerMode: true,
-    centerPadding: "0px",
-    prevArrow: "<i class='fas fa-chevron-left slick-prev'></i>",
-    nextArrow: "<i class='fas fa-chevron-right slick-next'></i>",
+  //   arrows: true,
+  //   slidesToShow: 5,
+  //   slidesToScroll: 1,
+  //   dots: false,
+  //   centerMode: true,
+  //   centerPadding: "0",
+  //   prevArrow: "<i class='fas fa-chevron-left slick-prev'></i>",
+  //   nextArrow: "<i class='fas fa-chevron-right slick-next'></i>",
+  //   autoplay: true,
+  //   autoplaySpeed: 2000,
+  //   responsive: [
+  //       {
+  //         breakpoint: 992,
+  //         settings: {
+  //           slidesToShow: 3,
+  //           slidesToScroll: 1,
+            
+  //           dots: false
+  //         }
+  //       },
+  //       {
+  //           breakpoint: 768,
+  //           settings: {
+  //             slidesToShow: 3,
+  //             slidesToScroll: 1,
+              
+  //             dots: false
+  //           }
+  //         },
+  //         {
+  //           breakpoint: 576,
+  //           settings: {
+  //             slidesToShow: 1,
+  //             slidesToScroll: 1,
+              
+  //             dots: false
+  //           }
+  //         },
+      
+  //  ]
+
+
+  //   });
+
+
+  //   }); 
+
+
+  $('.brand-slider').slick({
     autoplay: true,
-    autoplaySpeed: 2000,
-
-    });
-
-
-    }); 
+    autoplaySpeed: 4000,
+    slidesToShow: 5,
+    arrows: true,
+    infinite: true,
+    centerMode: true,
+    centerPadding: '0',
+    prevArrow: '<i class="slick-prev prev-arrow fas fa-chevron-left"></i>',
+    nextArrow: '<i class="slick-next next-arrow fas fa-chevron-right"></i>',
+    responsive: [
+        {
+          breakpoint: 767.98,
+          settings: {
+            slidesToShow: 3,
+          }
+        }
+      ]
+});
+}); 
 
 //back to top, fixed-nav
 
