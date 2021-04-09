@@ -74,9 +74,11 @@
     time: 1500,    
 
    });
-    // animate__animated;
 
-	// new WOW().init();
+   
+    //animate__animated;
+
+	new WOW().init();
 
 
 //brand-slider
