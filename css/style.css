@@ -86,9 +86,10 @@ p{
     top: 0;
     left: 0;
    background:#353535d0;
-   z-index: 99999;
+   border-bottom: 1px solid var(--clr);
+   z-index: 99999999;
    padding-bottom: 10px;
-   height: 70px;
+   height: 72px;
    animation: fixed-nav 1s linear;
 }
 
@@ -102,6 +103,65 @@ p{
 }
 
 /* fixed-nav */
+
+
+/*-- modal--*/
+
+/* .navbar .our-modal{
+    background: var(--clr);
+    color: var(--clb);
+    display: block;
+    margin-left: 0;
+    
+} */
+.our-modal{
+    background: var(--clr);
+    margin-left: 20px;
+    line-height: 30px;
+    color: var(--clw) !important;
+    border-radius: none !important;
+    transition: all linear 0.4s;
+    
+}
+.our-modal:hover{
+    background: var(--clw);
+    color: var(--clr) !important;
+}
+.modal{
+    background: var(--overred);
+    z-index: 999999;
+}
+.modal .form-group input{
+   
+    /* border-color: #0069d9; */
+    box-shadow:inset 10px 10px 20px #ccc,inset -10px -10px 10px #fff;    
+    
+}
+.modal-title{
+    font-size: 40px;
+    margin-left: 120px;
+    color:#0069d9;
+    
+   
+}
+.modal-img img{
+    font-size: 40px;
+    margin-top: 20px;
+    background:#0069d9;
+    border-radius: 0 70px 0 70px;
+    padding: 10px 30px;
+}
+/* .modal-content{
+    background:#f1f1f1;
+} */
+.modal-header{
+    border-bottom: 1px solid #0069d967;
+}
+.modal-body{
+    border-bottom: 1px solid #0069d967;  
+}
+
+/*-- modal--*/
 
 .navbar .navbar-brand{
     padding: 10px 30px;
@@ -119,7 +179,7 @@ p{
     color: var(--clw);
     text-transform: uppercase;
     padding: 0 10px;
-    line-height: 50px;
+    line-height: 40px;
     position: relative;
     z-index: 1;
     transition: all linear 0.4s;
@@ -509,7 +569,7 @@ p{
     width: 48px;
     height: 48px;
     line-height: 48px;
-    background: var(--clw);
+    background: var(--clr);
     text-align: center;
     border-radius: 50%;
     font-size: 24px;
@@ -523,8 +583,8 @@ p{
 }
 
 #about .about-video .overlay i:hover{
-    background: var(--clr);
-    color: #fff;
+    background: #fff;
+    color: var(--clr);
 }
 #about .about-video .overlay .icon{
     position: absolute;
@@ -1284,6 +1344,7 @@ p{
     background: var(--clr);
     border: 1px solid var(--clr);
     transform: rotate(-360deg);
+    color: #fff !important;
 }
 #footer h5{
     font-family: var(--hf);
@@ -1320,6 +1381,324 @@ p{
     text-transform: uppercase;
 }
 /*==== footer end ====*/
+
+
+/*==== color picker start ====*/
+.color-picker i{
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    line-height: 20px;
+   
+    color: var(--clb);
+    cursor: pointer;
+
+}
+.color-picker{
+    display: flex;
+    position: fixed;
+    right: -150px;
+    top: 200px;
+    height: 50px;
+    width: 150px;
+    background: #fff;
+    transition: all linear 0.4s;
+    z-index: 99999999;
+
+}
+.colorpos{
+    right: 0;
+}
+.color-picker .color-icon{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: -20px;
+    background: var(--clr);
+    
+}
+.color-picker ul{
+    display: flex;
+    
+}
+.color-picker ul li{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin: 5px;
+    margin-top: 15px;
+    cursor: pointer;
+}
+.color-picker ul li.default{
+    background: var(--clr);
+}
+.color-picker ul li.blue{
+    background: blue;
+}
+.color-picker ul li.green{
+    background: green;
+}
+.color-picker ul li.purple{
+    background: purple;
+}
+.color-picker ul li.orange{
+    background: orange;
+}
+
+
+/*-----blue color picker-----*/
+
+.blue .navbar .navbar-nav .nav-item .nav-link::after,
+.blue #banner .bg1 .banner-text h1::before,
+.blue #banner .bg1 .banner-text h1::after,
+.blue #banner .bg1 .banner-text h3::before,
+.blue #banner .bg1 .banner-text h3::after,
+.blue #banner .bg1 .banner-text p::before,
+.blue #banner .bg1 .banner-text p::after,
+.blue #banner .bg3 .banner-text h1::before,
+.blue #banner .bg3 .banner-text h1::after,
+.blue #banner .bg3 .banner-text h3::before,
+.blue #banner .bg3 .banner-text h3::after,
+.blue #banner .bg3 .banner-text p::before,
+.blue #banner .bg3 .banner-text p::after,
+.blue #banner .slick-dots .slick-active,
+.blue #banner .banner-text a:hover,
+.blue #testimonial .slick-dots .slick-active,
+.blue #plan .plan-item:hover .plan-head h3,
+.blue #plan .plan-item:hover .plan-footer a,
+.blue #classes .class-menu .nav-link.active,
+.blue #classes .class-item ul li.active,
+.blue #footer .footer-content::before,
+.blue #footer .socail ul li a i:hover,
+.blue #about .about-video .overlay i,
+.blue .back-to-top:hover,
+.blue .navbar .navbar-nav .nav-item .our-modal
+{
+    background: blue;
+}
+.blue #banner .slick-dots .slick-active,
+.blue #banner .banner-text a:hover,
+.blue #testimonial .slick-dots .slick-active,
+.blue #footer .socail ul li a i:hover,
+.blue .back-to-top i
+{
+    border-color: blue;
+}
+.blue .fixed-nav,
+.blue #footer .footer-content
+{
+    border-bottom: 1px solid blue;
+}
+.blue #banner .banner-text h1,
+.blue #testimonial .test-content .person-details ul li a i,
+.blue #brand .slick-prev:hover,
+.blue #brand .slick-next:hover,
+.blue #footer .contact-details ul li i,
+.blue #footer .copywrite p a,
+.blue .back-to-top i
+{
+    color: blue;
+}
+.blue .redoverlay,
+.blue .modal
+{
+    background: rgba(0, 0, 255, 0.5);
+}
+/*-----blue color picker-----*/
+
+
+/*-----green color picker-----*/
+
+
+.green .navbar .navbar-nav .nav-item .nav-link::after,
+.green #banner .bg1 .banner-text h1::before,
+.green #banner .bg1 .banner-text h1::after,
+.green #banner .bg1 .banner-text h3::before,
+.green #banner .bg1 .banner-text h3::after,
+.green #banner .bg1 .banner-text p::before,
+.green #banner .bg1 .banner-text p::after,
+.green #banner .bg3 .banner-text h1::before,
+.green #banner .bg3 .banner-text h1::after,
+.green #banner .bg3 .banner-text h3::before,
+.green #banner .bg3 .banner-text h3::after,
+.green #banner .bg3 .banner-text p::before,
+.green #banner .bg3 .banner-text p::after,
+.green #banner .slick-dots .slick-active,
+.green #banner .banner-text a:hover,
+.green #testimonial .slick-dots .slick-active,
+.green #plan .plan-item:hover .plan-head h3,
+.green #plan .plan-item:hover .plan-footer a,
+.green #classes .class-menu .nav-link.active,
+.green #classes .class-item ul li.active,
+.green #footer .footer-content::before,
+.green #footer .socail ul li a i:hover,
+.green #about .about-video .overlay i,
+.green .back-to-top:hover,
+.green .navbar .navbar-nav .nav-item .our-modal
+{
+    background: green;
+}
+.green #banner .slick-dots .slick-active,
+.green #banner .banner-text a:hover,
+.green #testimonial .slick-dots .slick-active,
+.green #footer .socail ul li a i:hover,
+.green .back-to-top i,
+.green .navbar .navbar-nav .nav-item .our-modal
+{
+    border-color:green;
+}
+.green .fixed-nav,
+.green #footer .footer-content
+{
+    border-bottom: 1px solid green;
+}
+.green #banner .banner-text h1,
+.green #testimonial .test-content .person-details ul li a i,
+.green #brand .slick-prev:hover,
+.green #brand .slick-next:hover,
+.green #footer .contact-details ul li i,
+.green #footer .copywrite p a,
+.green .back-to-top i
+{
+    color: green;
+}
+.green .redoverlay,
+.green .modal
+{
+    background: rgba(0, 128, 0, 0.5);
+}
+/*-----green color picker-----*/
+
+
+/*----- purple color picker-----*/
+
+.purple .navbar .navbar-nav .nav-item .nav-link::after,
+.purple #banner .bg1 .banner-text h1::before,
+.purple #banner .bg1 .banner-text h1::after,
+.purple #banner .bg1 .banner-text h3::before,
+.purple #banner .bg1 .banner-text h3::after,
+.purple #banner .bg1 .banner-text p::before,
+.purple #banner .bg1 .banner-text p::after,
+.purple #banner .bg3 .banner-text h1::before,
+.purple #banner .bg3 .banner-text h1::after,
+.purple #banner .bg3 .banner-text h3::before,
+.purple #banner .bg3 .banner-text h3::after,
+.purple #banner .bg3 .banner-text p::before,
+.purple #banner .bg3 .banner-text p::after,
+.purple #banner .slick-dots .slick-active,
+.purple #banner .banner-text a:hover,
+.purple #testimonial .slick-dots .slick-active,
+.purple #plan .plan-item:hover .plan-head h3,
+.purple #plan .plan-item:hover .plan-footer a,
+.purple #classes .class-menu .nav-link.active,
+.purple #classes .class-item ul li.active,
+.purple #footer .footer-content::before,
+.purple #footer .socail ul li a i:hover,
+.purple #about .about-video .overlay i,
+.purple .back-to-top:hover,
+.purple .navbar .navbar-nav .nav-item .our-modal
+{
+    background: purple;
+}
+.purple #banner .slick-dots .slick-active,
+.purple #banner .banner-text a:hover,
+.purple #testimonial .slick-dots .slick-active,
+.purple #footer .socail ul li a i:hover,
+.purple .back-to-top i
+{
+    border-color:purple;
+}
+.purple .fixed-nav,
+.purple #footer .footer-content
+{
+    border-bottom: 1px solid purple;
+}
+.purple #banner .banner-text h1,
+.purple #testimonial .test-content .person-details ul li a i,
+.purple #brand .slick-prev:hover,
+.purple #brand .slick-next:hover,
+.purple #footer .contact-details ul li i,
+.purple #footer .copywrite p a,
+.purple .back-to-top i
+{
+    color: purple;
+}
+.purple .redoverlay,
+.purple .modal
+{
+    background:rgba(128, 0, 128, 0.5);
+}
+/*----- purple color picker-----*/
+
+
+
+
+/*----- orange color picker-----*/
+
+.orange .navbar .navbar-nav .nav-item .nav-link::after,
+.orange #banner .bg1 .banner-text h1::before,
+.orange #banner .bg1 .banner-text h1::after,
+.orange #banner .bg1 .banner-text h3::before,
+.orange #banner .bg1 .banner-text h3::after,
+.orange #banner .bg1 .banner-text p::before,
+.orange #banner .bg1 .banner-text p::after,
+.orange #banner .bg3 .banner-text h1::before,
+.orange #banner .bg3 .banner-text h1::after,
+.orange #banner .bg3 .banner-text h3::before,
+.orange #banner .bg3 .banner-text h3::after,
+.orange #banner .bg3 .banner-text p::before,
+.orange #banner .bg3 .banner-text p::after,
+.orange #banner .slick-dots .slick-active,
+.orange #banner .banner-text a:hover,
+.orange #testimonial .slick-dots .slick-active,
+.orange #plan .plan-item:hover .plan-head h3,
+.orange #plan .plan-item:hover .plan-footer a,
+.orange #classes .class-menu .nav-link.active,
+.orange #classes .class-item ul li.active,
+.orange #footer .footer-content::before,
+.orange #footer .socail ul li a i:hover,
+.orange #about .about-video .overlay i,
+.orange .back-to-top:hover,
+.orange .navbar .navbar-nav .nav-item .our-modal
+{
+    background: orange;
+}
+.orange #banner .slick-dots .slick-active,
+.orange #banner .banner-text a:hover,
+.orange #testimonial .slick-dots .slick-active,
+.orange #footer .socail ul li a i:hover,
+.orange .back-to-top i
+{
+    border-color:orange;
+}
+.orange .fixed-nav,
+.orange #footer .footer-content
+{
+    border-bottom: 1px solid orange;
+}
+.orange #banner .banner-text h1,
+.orange #testimonial .test-content .person-details ul li a i,
+.orange #brand .slick-prev:hover,
+.orange #brand .slick-next:hover,
+.orange #footer .contact-details ul li i,
+.orange #footer .copywrite p a,
+.orange .back-to-top i
+{
+    color: orange;
+}
+.orange .redoverlay,
+.orange .modal
+{
+    background: rgba(255, 166, 0, 0.5);
+}
+/*----- orange color picker-----*/
+
+
+
+
+
+
+/*==== color picker end ====*/
 
 
 /*back-to top buttom*/

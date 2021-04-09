@@ -49,7 +49,10 @@
         </li> 
         <li class="nav-item">
           <a class="nav-link" href="#footer">contact</a>
-        </li>                   
+        </li>
+        <li class="nav-item">
+        <a class="btn our-modal" href="#" data-toggle="modal" data-target="#exampleModal">Login</a>                  
+      </li> 
       </ul>    
     </div>
   </div>
@@ -57,6 +60,53 @@
 </nav>
 <!----------- navbar end ---------->
 
+
+<!------------- Modal ----------->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">
+          Login Form</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <form action="">
+      <div class="modal-body">
+       
+         <div class="row">
+           <div class="col-lg-6">
+             <div class="modal-img">
+               <img src="images/F-logo.png" class="w-100" alt="">
+             </div>
+           </div>
+           <div class="col-lg-6">
+             <div class="form-field">
+               <div class="form-group">
+                 <input type="text" placeholder="Your Username" class="form-control">
+               </div>
+               <div class="form-group">
+                <input type="email" placeholder=" Your Email" class="form-control">
+              </div>
+               <div class="form-group">
+                <input type="password" placeholder="Password" class="form-control">
+              </div>
+              
+             </div>
+           </div>
+         </div>
+       
+      </div>
+      <div class="modal-footer">
+        
+        <button type="submit" class="btn btn-primary">LogIn</button>
+      </div>
+    </form>
+    </div>
+  </div>
+</div>
+<!------------- Modal ----------->
 
 <!----------- banner start ---------->
 <section id="banner">
@@ -121,19 +171,19 @@
           <img src="images/about-img.jpg" alt="" class="img-fluid w-100% ">
           <div class="overlay">
             <div class="icon ">
-              <a class="venobox" data-autoplay="true" data-vbtype="video" href="https://www.youtube.com/watch?v=GU_ReWj9k6Y"><i class="fas fa-play"></i></a>
+              <a class="venobox" data-autoplay="true" data-vbtype="video" href="https://www.youtube.com/watch?v=GU_ReWj9k6Y"><i class="fas fa-play "></i></a>
               
             </div>
           </div>
         </div>
       </div>
       <div class="col-lg-6 order-1 order-lg-2">
-        <div class="about-text text-center">
+        <div class="about-text text-center ">
           <div class="heading text-center">
             <h3 class="m-0">about us</h3>
             <img src="images/heading.png" alt="">
           </div>
-          <p class="m-0">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting.</p>
+          <p class="m-0 ">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting.</p>
           <p class="m-0">Remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software my name is of Lorem Ipsum.Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
         </div>
       </div>
@@ -1149,6 +1199,22 @@
   <!--footer end-->
 
 
+  <!--color picker start-->
+  <div class="color-picker">
+    <div class="color-icon">
+      <i class="fa fa-cog fa-spin"></i>
+    </div>
+    <ul>
+      <li class="default"></li>
+      <li class="blue"></li>
+      <li class="green"></li>
+      <li class="purple"></li>
+      <li class="orange"></li>
+    </ul>
+  </div>
+  <!--color picker end-->
+
+
 
   <!--back-to top buttom-->
 
@@ -1167,6 +1233,7 @@
     <script src="js/venobox.min.js"></script>
     <script src="js/waypoints.min.js"></script>
     <script src="js/jquery.counterup.min.js"></script>
+    <script src="js/wow.min.js"></script>
     <script src="js/custom.js"></script>
 </body>
 </html>

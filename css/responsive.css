@@ -98,6 +98,7 @@
         top: 0;
         left: 0;
         background:var(--clw);
+        
         z-index: -2;
         transition: all linear 0.4s;
         -o-transition: all linear 0.4s;
@@ -123,8 +124,8 @@
         color: var(--clr) !important;
     }
     .navbar-nav{
-        background: transparent;
-        /* background: var(--clr); */
+        background: var(--clr);
+        
         text-align: center;
     }
   

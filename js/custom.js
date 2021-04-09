@@ -29,7 +29,6 @@
 
 
 
-
     //testimonial
     $('.test-slider').slick({
     arrows: false,
@@ -66,16 +65,18 @@
           },
       
    ]
-
-
+   
     });
 
 
      //COUNTER UP
    $('.counter').counterUp({
-    time: 1500,
-    
-    });
+    time: 1500,    
+
+   });
+    // animate__animated;
+
+	// new WOW().init();
 
 
 //brand-slider
@@ -149,6 +150,31 @@
         }
       ]
 });
+
+$('.color-icon').on('click',function(){
+  $('.color-picker').toggleClass('colorpos');  
+});
+
+$('.color-picker ul .blue').on('click',function(){
+  $('body').addClass('blue').removeClass('green purple orange');
+});
+
+$('.color-picker ul .green').on('click',function(){
+  $('body').addClass('green').removeClass('blue purple orange');
+});
+
+$('.color-picker ul .purple').on('click',function(){
+  $('body').addClass('purple').removeClass('green blue orange');
+});
+
+$('.color-picker ul .orange').on('click',function(){
+  $('body').addClass('orange').removeClass('green purple blue');
+});
+
+$('.color-picker ul .default').on('click',function(){
+  $('body').removeClass('blue green purple orange');
+});
+
 }); 
 
 //back to top, fixed-nav
