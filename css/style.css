@@ -1063,58 +1063,6 @@ p{
 
 
 /*===== brand start  =====*/
- /* #brand{
-    margin-top: 80px;
-    margin-bottom: 80px;
-    position: relative;
-}
-#brand .slick-track{
-    padding: 15px 0;
-}
-#brand .slick-prev {
-
-    position: absolute;
-    cursor: pointer;
-    top: 60px;
-    left: -40px;
-    color: #353535;
-    font-size: 30px;
-    transition: all linear 0.4s;
-    -o-transition: all linear 0.4s;
-    -moz-transition: all linear 0.4s;
-    -ms-transition: all linear 0.4s;
-    -webkit-transition: all linear 0.4s; 
-}
-
-
-#brand .slick-prev:hover{
-    color: var(--clr);
-}
-
-#brand .slick-next {
-
-    position: absolute;
-    cursor: pointer;
-    top: 60px;
-    right: -40px;
-    color: #353535;
-    font-size: 30px;
-    transition: all linear 0.4s;
-}
-#brand .slick-next:hover{
-    color: var(--clr);
-}
-
-#brand .brand-slider .brand-item {
-    margin: 10px;
-}
-
-
-#brand .slick-slider .slick-center img {
-    box-shadow: 1px 2px 3px 1px;
-    transform: scaleY(1.2);   
-} */
-
 
 #brand {
     margin: 74px 0;

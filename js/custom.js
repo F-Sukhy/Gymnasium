@@ -21,6 +21,7 @@
 
 
     // about venobox
+
    $('.venobox').venobox({
     overlayColor: 'rgba(226, 62, 56, 0.5)',
     spinner: 'three-bounce',
@@ -30,6 +31,7 @@
 
 
     //testimonial
+
     $('.test-slider').slick({
     arrows: false,
    slidesToShow: 2,      
@@ -70,6 +72,7 @@
 
 
      //COUNTER UP
+
    $('.counter').counterUp({
     time: 1500,    
 
@@ -80,57 +83,6 @@
 
 	new WOW().init();
 
-
-//brand-slider
-    
-  //   $(".brand-slider").slick({
-
-  //   arrows: true,
-  //   slidesToShow: 5,
-  //   slidesToScroll: 1,
-  //   dots: false,
-  //   centerMode: true,
-  //   centerPadding: "0",
-  //   prevArrow: "<i class='fas fa-chevron-left slick-prev'></i>",
-  //   nextArrow: "<i class='fas fa-chevron-right slick-next'></i>",
-  //   autoplay: true,
-  //   autoplaySpeed: 2000,
-  //   responsive: [
-  //       {
-  //         breakpoint: 992,
-  //         settings: {
-  //           slidesToShow: 3,
-  //           slidesToScroll: 1,
-            
-  //           dots: false
-  //         }
-  //       },
-  //       {
-  //           breakpoint: 768,
-  //           settings: {
-  //             slidesToShow: 3,
-  //             slidesToScroll: 1,
-              
-  //             dots: false
-  //           }
-  //         },
-  //         {
-  //           breakpoint: 576,
-  //           settings: {
-  //             slidesToShow: 1,
-  //             slidesToScroll: 1,
-              
-  //             dots: false
-  //           }
-  //         },
-      
-  //  ]
-
-
-  //   });
-
-
-  //   }); 
 
 
   $('.brand-slider').slick({
@@ -152,6 +104,8 @@
         }
       ]
 });
+
+//color-picker
 
 $('.color-icon').on('click',function(){
   $('.color-picker').toggleClass('colorpos');  
@@ -223,58 +177,3 @@ $('.color-picker ul .default').on('click',function(){
         });
         
 
-    
-// $(function(){
-
-//     $(window).scroll(function () {
-
-//         var scrolling = $(this).scrollTop();
-//         var html_body = $('html,body');
-
-//         if (scrolling > 200) {
-
-//             $(".navbar").addClass("fixed-nav");
-//         } else {
-
-//             $(".navbar").removeClass("fixed-nav")
-//         }
-
-//         if (scrolling > 550) {
-
-//             $(".back-to-top").fadeIn(1000)
-
-//         } else {
-
-//             $(".back-to-top").fadeOut(1000)
-
-//         }  
-        
-            
-//      $(".back-to-top").click(function(){
-        
-//         $("html,body").animate({
-            
-//             scrollTop:"0px"
-//         },1500)
-          
-//       });
-  
-
-//       $('.navbar .navbar-nav .nav-item a').on('click', function () {
-//         if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
-//             var target = $(this.hash);
-//             target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-//             if (target.length) {
-//                 html_body.animate({
-//                     scrollTop: target.offset().top - 0
-//                 }, 1500,);
-//                 return false;
-//             }
-//         }
-//     });
-    
-
-// });
-
-
-//     });
