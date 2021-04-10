@@ -208,7 +208,7 @@
 /*--=== small device===---*/
 
 
-@media (max-width: 767.98px) {
+@media (min-width: 576.98px) and (max-width: 767.98px) {
     .navbar .navbar-brand {
         position: static;
         padding: 0;         
@@ -348,7 +348,7 @@
 /*--=== small device===---*/
 
 /*--===extra small device===---*/
-@media (max-width: 575.98px){
+@media(min-width: 50px) and (max-width: 576.98px){
     .navbar .navbar-brand {
         position: static;                
         transform: skewX(-30deg);
@@ -410,15 +410,30 @@
         margin-top: 30px !important;
     }
     
-    #classes .class-menu .nav-link {
+    /* #classes .class-menu .nav-link {
        
-        width: 272px;
+        width: 222px;
         
     }
-    #classes .class-item ul li {
-        width: 49%;
+    #classes .class-item  {
+        width: 47%;
        
+    } */
+    
+
+	#classes .class-menu .nav .nav-item {
+		background: #f1f1f1;
+		padding: 0 !important;
+		width: 49%;
     }
+    #classes .class-item{
+        width: 116.6%;
+    }
+    #classes .class-item ul li{
+        width: 42%;
+    }
+	
+	
     #footer .contact-details ul li {
        
         margin-top: -10px !important;
