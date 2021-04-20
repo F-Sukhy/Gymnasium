@@ -119,7 +119,7 @@ p{
     margin-left: 20px;
     line-height: 30px;
     color: var(--clw) !important;
-    border-radius: none !important;
+    border-radius: 0 !important;
     transition: all linear 0.4s;
     
 }
@@ -594,8 +594,7 @@ p{
 }
 #about .about-text p{
     font-size: 14px;
-    font-weight: 400px;
-    line-height: 24px;
+    font-weight: 400;
     color: #777;
     padding: 0 10px;
     
